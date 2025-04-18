@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 38% 19%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 38% 19%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 38% 19%;
+
+    --primary: 210 67% 19%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 34% 34%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+
+    --accent: 31 91% 65%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 210 67% 19%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  
+  .negative-value {
+    @apply text-red-500;
+  }
+  
+  /* Ensure styles have high specificity */
+  .case-study-table {
+    @apply w-full border-collapse border border-gray-200 !important;
+  }
+  
+  .case-study-table th {
+    @apply text-left py-2 px-4 bg-wiw-dark-blue/10 font-medium text-wiw-dark-blue border border-gray-200 !important;
+  }
+  
+  .case-study-table td {
+    @apply py-2 px-4 border-b border-b-gray-200 border border-gray-200 !important;
+  }
+  
+  .section-header {
+    @apply font-serif text-xl font-semibold text-wiw-medium-blue mt-8 mb-3;
+  }
+  
+  .total-row {
+    @apply bg-gray-50 font-medium;
+  }
+  
+  /* Additional rules to ensure table styling works */
+  table {
+    border: 1px solid rgba(209, 213, 219, 1) !important;
+  }
+  
+  th, td {
+    border: 1px solid rgba(209, 213, 219, 1) !important;
+  }
+}

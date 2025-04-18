@@ -1,0 +1,220 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Tab styling improvements */
+.tabs-container {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+/* Active tab indicator animation */
+@keyframes tab-indicator {
+  from {
+    width: 0;
+  }
+  to {
+    width: 66%;
+  }
+}
+
+/* Tab hover effect */
+.tab-hover-effect {
+  transition: all 0.2s ease;
+}
+.tab-hover-effect:hover {
+  transform: translateY(-2px);
+}
+
+/* Table styling improvements - enforcing styles with !important to override conflicting styles */
+.table-container {
+  margin: 1.5rem 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Force table borders and backgrounds to be visible */
+table {
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border: 1px solid rgba(209, 213, 219, 1) !important;
+  width: 100% !important;
+}
+
+th, td {
+  border: 1px solid rgba(209, 213, 219, 1) !important;
+  padding: 0.5rem !important;
+}
+
+th {
+  background-color: rgba(144, 205, 244, 0.2) !important;
+  color: #003361 !important;
+  font-weight: 600 !important;
+}
+
+/* Zebra striping for tables */
+tr:nth-child(even) {
+  background-color: #F9F9FB !important;
+}
+
+/* Improve number visibility in tables */
+.number-cell {
+  font-family: 'Playfair Display', monospace !important;
+  font-weight: 600 !important;
+  color: #003361 !important;
+  text-align: right !important;
+}
+
+/* Currency value styling */
+.currency-value {
+  position: relative !important;
+  padding-left: 0.5rem !important;
+  font-variant-numeric: tabular-nums !important;
+}
+
+/* Highlight totals */
+.total-row {
+  background-color: #F1F0FB !important;
+  font-weight: 600 !important;
+  color: #003361 !important;
+}
+
+/* Table header styling */
+.table-header-cell {
+  background-color: #90CDF4 !important;
+  color: #003361 !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* Table section headers */
+.section-header {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  color: #2C5282 !important;
+  margin: 2rem 0 1rem !important;
+  border-bottom: 2px solid #90CDF4 !important;
+  padding-bottom: 0.5rem !important;
+  display: inline-block !important;
+}
+
+/* Scenario cards styling */
+.scenario-card {
+  border: 1px solid #E2E8F0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.scenario-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.scenario-header {
+  background: linear-gradient(to right, #EBF4FF, #F0F9FF);
+  padding: 1rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.scenario-number {
+  background-color: #8B5CF6;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-right: 0.75rem;
+}
+
+.scenario-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: #2C5282;
+}
+
+.scenario-subtitle {
+  font-size: 0.875rem;
+  color: #4A5568;
+}
+
+.scenario-data-table th {
+  background-color: #EBF8FF !important;
+  padding: 0.5rem !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  color: #2C5282 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+.scenario-data-table td {
+  padding: 0.5rem !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+  font-size: 0.875rem !important;
+}
+
+.scenario-conclusion {
+  background-color: #F7FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.conclusion-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: #2C5282;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
